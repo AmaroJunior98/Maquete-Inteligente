@@ -1,7 +1,9 @@
+//Definindo variaveis
 #define ledP 4
 #define potPin A0
 #define ldr A2
 
+//Definindo valores para variaveis
 int valPot = 0, vldr = 0, led = 2, led2 = 3, sinal = 8, sinal2 = 9;
 
 void setup(){
@@ -16,6 +18,7 @@ void setup(){
 }
 
 void loop(){
+  //Parte para corrigir em maquete_inteligente_parte1 parte1
   vldr = analogRead(ldr);
   
   if(vldr < 222){
@@ -24,7 +27,9 @@ void loop(){
     analogWrite(ledP, valPot);
   }else
     analogWrite(ledP, HIGH);
-    
+  //Final parte para corrigir.
+
+  //Funcionalidade controla um semaforo de pedestres.
   digitalWrite(led,LOW);
   digitalWrite(led2,HIGH);
   if((digitalRead(sinal)==LOW) && (digitalRead(sinal2)==LOW)){
@@ -37,7 +42,9 @@ void loop(){
     delay(2000);
     
   }
+  //Final funcionalidade.
+
+  //Codigo abaixo usado para verificar valor vldr.
   Serial.println(vldr);
   
 }
-
