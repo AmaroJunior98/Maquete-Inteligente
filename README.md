@@ -1,7 +1,8 @@
 # Maquete-Inteligente
 Maquete de uma Cidade Inteligente Utilizando Arduíno.
 
-Detalhes:
+Detalhes: 
+	Atualmente o projeto é uma maquete que usa de recursos como um display LCD para mostra temperatura e humidade, um potenciômetro para regular a sensibilidade de um sensor de luminosidade e o mesmo, LEDs brancos para simular postes, LEDs vermelhos, verdes e amarelos para simular os semáforos, um sensor de temperatura e humidade para mostra no disply, duas placas arduino uno e duas protoboards juntamente com alguns jumpers macho e macho/fêmea para facilitar a remoção das placas e protoboards.
 
 Concluídos:
   
@@ -12,7 +13,7 @@ Concluídos:
 	Função do sensor de calor e humidade.
 
 
-Por fazer:
+Melhorias por fazer:
   
 	Integrar os código da Parte2 na Parte1.
 
